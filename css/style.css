@@ -14,12 +14,24 @@
 }
 /*** Spinner End ***/
 
+/*** back to top button ***/
 .back-to-top {
     position: fixed;
     right: 30px;
     bottom: 30px;
     transition: 0.5s;
     z-index: 99;
+    border-radius: 50%;
+}
+
+/*** whatsapp button ***/
+.whatsapp-button {
+    position: fixed;
+    right: 30px;
+    bottom: 85px;
+    transition: 0.3s;
+    z-index: 99;
+    border-radius: 50%;
 }
 
 
@@ -902,6 +914,48 @@
 }
 /*** copyright end ***/
 
+/*** Team ***/
+.team-item img {
+  transition: 0.5s;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-item .team-text {
+  height: 90px;
+  overflow: hidden;
+}
+
+.team-item .team-text .bg-light,
+.team-item .team-text .bg-primary {
+  position: relative;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.team-item .team-text .bg-primary {
+  flex-direction: row;
+}
+
+.team-item:hover .team-text .bg-light {
+  margin-top: -90px;
+}
+
+.team-item .team-text .bg-primary .btn {
+  color: var(--primary);
+  background: #ffffff;
+}
+
+.team-item .team-text .bg-primary .btn:hover {
+  color: #ffffff;
+  background: var(--secondary);
+}
 
 
 
