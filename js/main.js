@@ -97,18 +97,16 @@
 
     leftCarouselImages.forEach((img, index) => {
       $(".product-carousel-left").append(`
-      <div class="item text-center p-3">
+      <div class="item text-center p-1">
         <img src="${img}" class="img-fluid mb-2" alt="Product ${index + 1}">
-        <h6 class="mb-0">Product ${index + 1}</h6>
       </div>
     `);
     });
 
     rightCarouselImages.forEach((img, index) => {
       $(".product-carousel-right").append(`
-      <div class="item text-center p-3">
+      <div class="item text-center p-1">
         <img src="${img}" class="img-fluid mb-2" alt="Product ${index + 26}">
-        <h6 class="mb-0">Product ${index + 26}</h6>
       </div>
     `);
     });
